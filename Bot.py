@@ -91,7 +91,7 @@ async def tictactoe(context):  # I know, I should probably use "ctx" instead
                 return
             if not value_error:
 
-                if board_values[int(user_input.content)] == "▢":
+                if board_values[int(user_input.content)-1] == "▢":
                     board_values[int(user_input.content)-1] = user_symbol
                     # print(board_values)
                     # print(int(user_input.content)-1)
